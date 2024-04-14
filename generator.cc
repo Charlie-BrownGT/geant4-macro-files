@@ -23,7 +23,5 @@ MyPrimaryGenerator::~MyPrimaryGenerator()
 
 void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 {
-	G4ParticleDefinition *particle = fParticleGun->GetParticleDefinition();
-	
 	fParticleGun->GeneratePrimaryVertex(anEvent);
 }
